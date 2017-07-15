@@ -1,0 +1,1 @@
+../../../ZMJImageEditor/ZMJImageEditor/Classes/TOCropViewController/Models/TOCroppedImageAttributes.h

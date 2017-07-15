@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="154" id="KGk-i7-Jjw" customClass="UUGoodsAttributesCell">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="154"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="154"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtJ-Gv-lYN">
+                        <rect key="frame" x="9" y="14.5" width="7.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品属性" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBt-SF-8cr">
+                        <rect key="frame" x="21.5" y="14" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGW-Zm-P6h">
+                        <rect key="frame" x="0.0" y="37" width="431" height="116.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wGW-Zm-P6h" secondAttribute="trailing" id="0La-53-1l2"/>
+                    <constraint firstItem="wGW-Zm-P6h" firstAttribute="top" secondItem="NBt-SF-8cr" secondAttribute="bottom" constant="5" id="5cP-yt-rvz"/>
+                    <constraint firstItem="wGW-Zm-P6h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9sS-FB-KmL"/>
+                    <constraint firstAttribute="bottom" secondItem="wGW-Zm-P6h" secondAttribute="bottom" id="B5K-uL-Frv"/>
+                    <constraint firstItem="NBt-SF-8cr" firstAttribute="leading" secondItem="WtJ-Gv-lYN" secondAttribute="trailing" constant="5" id="QB1-Hw-LRV"/>
+                    <constraint firstItem="WtJ-Gv-lYN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14.5" id="fy6-Zv-A1L"/>
+                    <constraint firstItem="WtJ-Gv-lYN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="oQ4-uP-O68"/>
+                    <constraint firstItem="NBt-SF-8cr" firstAttribute="top" secondItem="WtJ-Gv-lYN" secondAttribute="top" id="xGC-mZ-75W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentBackView" destination="wGW-Zm-P6h" id="my5-2g-XTD"/>
+            </connections>
+            <point key="canvasLocation" x="97.5" y="109"/>
+        </tableViewCell>
+    </objects>
+</document>

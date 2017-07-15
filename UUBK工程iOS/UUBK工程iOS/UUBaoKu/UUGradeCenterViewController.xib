@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UUGradeCenterViewController">
+            <connections>
+                <outlet property="contentView" destination="pfa-p4-Uns" id="AJ4-G4-dDw"/>
+                <outlet property="contentWidth" destination="0JO-jS-Gzu" id="mdC-ja-dVe"/>
+                <outlet property="distributorGrade" destination="cas-TF-F7K" id="XuW-CM-JgT"/>
+                <outlet property="gradeLogs" destination="fHZ-8R-RCa" id="8Wu-kQ-wHx"/>
+                <outlet property="gradePromote" destination="PvJ-E7-BjI" id="ny9-FO-Vhy"/>
+                <outlet property="scrollView" destination="oLw-en-UIO" id="Ush-eF-Wsu"/>
+                <outlet property="supplierGrade" destination="AIx-KB-Tl2" id="ViR-zI-wG1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="头像背景" translatesAutoresizingMaskIntoConstraints="NO" id="4MR-KJ-mIZ">
+                    <rect key="frame" x="0.0" y="1" width="375" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="wQ9-RN-abZ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cas-TF-F7K">
+                    <rect key="frame" x="8" y="166" width="84" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="Px9-ig-EYE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="-40" minY="22" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="25" maxY="25"/>
+                    <state key="normal" title="蜂忙士等级" image="蜂忙士等级">
+                        <color key="titleColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="蜂忙士等级">
+                        <color key="titleColor" red="0.89019607840000003" green="0.2784313725" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="distributorAction:" destination="-1" eventType="touchUpInside" id="Kyt-3U-csV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIx-KB-Tl2">
+                    <rect key="frame" x="100" y="166" width="83.5" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="V4f-MR-4gZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="-50" minY="22" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="25" maxY="25"/>
+                    <state key="normal" title="供货商等级" image="供货商等级">
+                        <color key="titleColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="供货商等级">
+                        <color key="titleColor" red="0.89019607840000003" green="0.2784313725" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="supplierAction:" destination="-1" eventType="touchUpInside" id="nJd-Ch-lJZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHZ-8R-RCa">
+                    <rect key="frame" x="191.5" y="166" width="84" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="DvD-Hu-PEF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="-50" minY="22" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="25" maxY="25"/>
+                    <state key="normal" title="等级日志" image="等级日志">
+                        <color key="titleColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="等级日志">
+                        <color key="titleColor" red="0.89019607840000003" green="0.2784313725" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="gradeLogsAction:" destination="-1" eventType="touchUpInside" id="JqL-Wq-FNp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvJ-E7-BjI">
+                    <rect key="frame" x="283.5" y="166" width="83.5" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="Gdu-nl-hWY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="-60" minY="22" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="25" maxY="25"/>
+                    <state key="normal" title="等级升级" image="等级升级">
+                        <color key="titleColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="等级升级">
+                        <color key="titleColor" red="0.89019607840000003" green="0.2784313725" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="gradePromoteAction:" destination="-1" eventType="touchUpInside" id="kww-LQ-MSL"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLw-en-UIO">
+                    <rect key="frame" x="0.0" y="227" width="375" height="440"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfa-p4-Uns">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="440"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="240" id="0JO-jS-Gzu"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="pfa-p4-Uns" secondAttribute="bottom" id="064-HA-AWY"/>
+                        <constraint firstAttribute="bottom" secondItem="pfa-p4-Uns" secondAttribute="bottom" id="2Dc-xi-tdJ"/>
+                        <constraint firstItem="pfa-p4-Uns" firstAttribute="leading" secondItem="oLw-en-UIO" secondAttribute="leading" id="HAl-xR-Shd"/>
+                        <constraint firstAttribute="trailing" secondItem="pfa-p4-Uns" secondAttribute="trailing" constant="135" id="RnQ-xs-Se1"/>
+                        <constraint firstItem="pfa-p4-Uns" firstAttribute="centerY" secondItem="oLw-en-UIO" secondAttribute="centerY" id="VcY-Vx-0mZ"/>
+                        <constraint firstItem="pfa-p4-Uns" firstAttribute="top" secondItem="oLw-en-UIO" secondAttribute="top" id="iN5-8v-Akd"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cas-TF-F7K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="025-Xq-sWH"/>
+                <constraint firstAttribute="trailing" secondItem="PvJ-E7-BjI" secondAttribute="trailing" constant="8" id="1UL-rh-TgT"/>
+                <constraint firstItem="PvJ-E7-BjI" firstAttribute="leading" secondItem="fHZ-8R-RCa" secondAttribute="trailing" constant="8" id="1vh-GQ-HE4"/>
+                <constraint firstItem="4MR-KJ-mIZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="1" id="3cM-kD-GFd"/>
+                <constraint firstItem="fHZ-8R-RCa" firstAttribute="leading" secondItem="AIx-KB-Tl2" secondAttribute="trailing" constant="8" id="5as-1R-2Jc"/>
+                <constraint firstAttribute="bottom" secondItem="oLw-en-UIO" secondAttribute="bottom" id="C2d-fL-rKb"/>
+                <constraint firstItem="4MR-KJ-mIZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EPc-DA-9LE"/>
+                <constraint firstItem="AIx-KB-Tl2" firstAttribute="leading" secondItem="cas-TF-F7K" secondAttribute="trailing" constant="8" id="HvU-fg-6t6"/>
+                <constraint firstItem="PvJ-E7-BjI" firstAttribute="top" secondItem="fHZ-8R-RCa" secondAttribute="top" id="Ida-V5-pum"/>
+                <constraint firstItem="oLw-en-UIO" firstAttribute="top" secondItem="AIx-KB-Tl2" secondAttribute="bottom" constant="15" id="RsP-Km-3Ob"/>
+                <constraint firstItem="cas-TF-F7K" firstAttribute="top" secondItem="4MR-KJ-mIZ" secondAttribute="bottom" constant="15" id="Veq-gU-bFQ"/>
+                <constraint firstItem="oLw-en-UIO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="W7o-qi-z0L"/>
+                <constraint firstItem="AIx-KB-Tl2" firstAttribute="top" secondItem="cas-TF-F7K" secondAttribute="top" id="fJ6-mN-URV"/>
+                <constraint firstItem="fHZ-8R-RCa" firstAttribute="width" secondItem="AIx-KB-Tl2" secondAttribute="width" id="oHa-hN-eMU"/>
+                <constraint firstItem="fHZ-8R-RCa" firstAttribute="top" secondItem="AIx-KB-Tl2" secondAttribute="top" id="pxQ-fq-24o"/>
+                <constraint firstAttribute="trailing" secondItem="4MR-KJ-mIZ" secondAttribute="trailing" id="sbd-l9-3Yk"/>
+                <constraint firstAttribute="trailing" secondItem="oLw-en-UIO" secondAttribute="trailing" id="soO-XU-UhM"/>
+                <constraint firstItem="PvJ-E7-BjI" firstAttribute="width" secondItem="fHZ-8R-RCa" secondAttribute="width" id="wx9-r1-7s8"/>
+                <constraint firstItem="AIx-KB-Tl2" firstAttribute="width" secondItem="cas-TF-F7K" secondAttribute="width" id="zwf-Wx-8oS"/>
+            </constraints>
+            <point key="canvasLocation" x="41.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="供货商等级" width="46" height="47"/>
+        <image name="头像背景" width="680" height="312"/>
+        <image name="等级升级" width="62" height="47"/>
+        <image name="等级日志" width="47" height="47"/>
+        <image name="蜂忙士等级" width="39" height="46"/>
+    </resources>
+</document>

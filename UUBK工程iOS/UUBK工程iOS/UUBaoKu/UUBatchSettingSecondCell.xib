@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="UUBatchSettingSecondCell">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OuL-RK-3cC">
+                        <rect key="frame" x="174" y="0.0" width="174" height="121.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品售价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grv-yW-fiW">
+                                <rect key="frame" x="5" y="39" width="61.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2kx-i9-xeu">
+                                <rect key="frame" x="71" y="33" width="88" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品重量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t23-yJ-DKD">
+                                <rect key="frame" x="5" y="72" width="61.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QwD-i5-J2d">
+                                <rect key="frame" x="71" y="66" width="88.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QwD-i5-J2d" firstAttribute="leading" secondItem="t23-yJ-DKD" secondAttribute="trailing" constant="5" id="5J4-lH-XLi"/>
+                            <constraint firstItem="2kx-i9-xeu" firstAttribute="leading" secondItem="grv-yW-fiW" secondAttribute="trailing" constant="5" id="8Sr-VT-jxt"/>
+                            <constraint firstItem="QwD-i5-J2d" firstAttribute="centerY" secondItem="t23-yJ-DKD" secondAttribute="centerY" id="OGD-Me-nPk"/>
+                            <constraint firstAttribute="trailing" secondItem="2kx-i9-xeu" secondAttribute="trailing" constant="15" id="Ok1-pv-og4"/>
+                            <constraint firstItem="2kx-i9-xeu" firstAttribute="centerY" secondItem="grv-yW-fiW" secondAttribute="centerY" id="gF9-5O-jfX"/>
+                            <constraint firstItem="t23-yJ-DKD" firstAttribute="leading" secondItem="grv-yW-fiW" secondAttribute="leading" id="kjh-8U-tyk"/>
+                            <constraint firstItem="QwD-i5-J2d" firstAttribute="trailing" secondItem="2kx-i9-xeu" secondAttribute="trailing" id="m9n-Nt-CFO"/>
+                            <constraint firstItem="t23-yJ-DKD" firstAttribute="top" secondItem="grv-yW-fiW" secondAttribute="bottom" constant="15" id="sZE-M5-6bj"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ow5-za-Ehg">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="121.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKp-UC-ifm">
+                                <rect key="frame" x="15" y="7" width="40" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分销进价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uko-E2-ehJ">
+                                <rect key="frame" x="15" y="38.5" width="61.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dip-Xm-Cbk">
+                                <rect key="frame" x="81.5" y="33" width="87.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品库存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhi-sm-z9V">
+                                <rect key="frame" x="15" y="71.5" width="61.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zCK-26-EaK">
+                                <rect key="frame" x="81" y="65.5" width="88" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zCK-26-EaK" firstAttribute="leading" secondItem="Xhi-sm-z9V" secondAttribute="trailing" constant="5" id="1Um-QK-OC2"/>
+                            <constraint firstItem="uko-E2-ehJ" firstAttribute="leading" secondItem="YKp-UC-ifm" secondAttribute="leading" id="4m5-At-9aW"/>
+                            <constraint firstItem="Xhi-sm-z9V" firstAttribute="leading" secondItem="uko-E2-ehJ" secondAttribute="leading" id="Cgz-6f-TTB"/>
+                            <constraint firstItem="uko-E2-ehJ" firstAttribute="top" secondItem="YKp-UC-ifm" secondAttribute="bottom" constant="13.5" id="HAQ-lU-vTH"/>
+                            <constraint firstItem="YKp-UC-ifm" firstAttribute="leading" secondItem="Ow5-za-Ehg" secondAttribute="leading" constant="15" id="HFn-JG-1pf"/>
+                            <constraint firstItem="dip-Xm-Cbk" firstAttribute="leading" secondItem="uko-E2-ehJ" secondAttribute="trailing" constant="5" id="ZFl-Kz-BS0"/>
+                            <constraint firstItem="zCK-26-EaK" firstAttribute="trailing" secondItem="dip-Xm-Cbk" secondAttribute="trailing" id="clI-0y-r3M"/>
+                            <constraint firstItem="YKp-UC-ifm" firstAttribute="top" secondItem="Ow5-za-Ehg" secondAttribute="top" constant="7" id="lWd-qG-9xF"/>
+                            <constraint firstItem="Xhi-sm-z9V" firstAttribute="top" secondItem="uko-E2-ehJ" secondAttribute="bottom" constant="15" id="lhM-Bq-bSe"/>
+                            <constraint firstItem="zCK-26-EaK" firstAttribute="centerY" secondItem="Xhi-sm-z9V" secondAttribute="centerY" id="nXs-e9-6pA"/>
+                            <constraint firstItem="dip-Xm-Cbk" firstAttribute="centerY" secondItem="uko-E2-ehJ" secondAttribute="centerY" id="oag-je-YJJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ow5-za-Ehg" secondAttribute="bottom" id="Btu-cE-m8g"/>
+                    <constraint firstItem="grv-yW-fiW" firstAttribute="leading" secondItem="dip-Xm-Cbk" secondAttribute="trailing" constant="10" id="L4N-Dn-2w0"/>
+                    <constraint firstItem="Ow5-za-Ehg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bnb-Re-BuJ"/>
+                    <constraint firstItem="OuL-RK-3cC" firstAttribute="width" secondItem="Ow5-za-Ehg" secondAttribute="width" id="dbr-bt-8V5"/>
+                    <constraint firstAttribute="trailing" secondItem="OuL-RK-3cC" secondAttribute="trailing" id="fe8-yD-CYr"/>
+                    <constraint firstItem="OuL-RK-3cC" firstAttribute="height" secondItem="Ow5-za-Ehg" secondAttribute="height" id="hCs-yO-FxL"/>
+                    <constraint firstItem="OuL-RK-3cC" firstAttribute="leading" secondItem="dip-Xm-Cbk" secondAttribute="trailing" constant="5" id="jgO-kQ-uZc"/>
+                    <constraint firstItem="OuL-RK-3cC" firstAttribute="top" secondItem="Ow5-za-Ehg" secondAttribute="top" id="ppP-LY-RS1"/>
+                    <constraint firstItem="OuL-RK-3cC" firstAttribute="leading" secondItem="Ow5-za-Ehg" secondAttribute="trailing" id="qHJ-my-KFA"/>
+                    <constraint firstItem="Ow5-za-Ehg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="r9i-fs-Xlr"/>
+                    <constraint firstItem="grv-yW-fiW" firstAttribute="centerY" secondItem="dip-Xm-Cbk" secondAttribute="centerY" id="yCy-da-qii"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commodityPrice" destination="2kx-i9-xeu" id="bd5-Gj-AXh"/>
+                <outlet property="distributionPrice" destination="dip-Xm-Cbk" id="xC3-ag-1jD"/>
+                <outlet property="goodsStock" destination="zCK-26-EaK" id="wKP-Ne-flp"/>
+                <outlet property="goodsWeight" destination="QwD-i5-J2d" id="9b8-aY-kla"/>
+                <outlet property="titleLab" destination="YKp-UC-ifm" id="JJa-LO-zdT"/>
+            </connections>
+            <point key="canvasLocation" x="28" y="93"/>
+        </tableViewCell>
+    </objects>
+</document>

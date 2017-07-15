@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="0As-AU-Xia" customClass="OrderSelfGetCell">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="74"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0As-AU-Xia" id="klR-U2-bSa">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1j-UN-Cno">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Btu-oN-kBc"/>
+                        </constraints>
+                        <state key="normal" image="未到账"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="自提" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uV-vp-M1V">
+                        <rect key="frame" x="55" y="28" width="31" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQB-vM-9Dy">
+                        <rect key="frame" x="0.0" y="73" width="373" height="0.0"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Kcd-lN-jUW"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(金华市 虽城区 双溪西路 618号 418室)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVw-w3-EPL">
+                        <rect key="frame" x="91" y="28.5" width="267" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2uV-vp-M1V" firstAttribute="leading" secondItem="r1j-UN-Cno" secondAttribute="trailing" constant="5" id="4UM-gc-HRV"/>
+                    <constraint firstItem="r1j-UN-Cno" firstAttribute="top" secondItem="klR-U2-bSa" secondAttribute="top" id="Jdp-gJ-Kd9"/>
+                    <constraint firstItem="2uV-vp-M1V" firstAttribute="centerY" secondItem="klR-U2-bSa" secondAttribute="centerY" id="K1Z-c1-nBc"/>
+                    <constraint firstAttribute="bottom" secondItem="r1j-UN-Cno" secondAttribute="bottom" id="NFe-XC-65n"/>
+                    <constraint firstItem="gQB-vM-9Dy" firstAttribute="leading" secondItem="klR-U2-bSa" secondAttribute="leading" id="QGJ-dT-urt"/>
+                    <constraint firstAttribute="bottom" secondItem="gQB-vM-9Dy" secondAttribute="bottom" id="XGa-GL-whQ"/>
+                    <constraint firstItem="NVw-w3-EPL" firstAttribute="centerY" secondItem="klR-U2-bSa" secondAttribute="centerY" id="eRG-1R-GOu"/>
+                    <constraint firstItem="NVw-w3-EPL" firstAttribute="leading" secondItem="2uV-vp-M1V" secondAttribute="trailing" constant="5" id="hbi-fm-YhI"/>
+                    <constraint firstItem="r1j-UN-Cno" firstAttribute="leading" secondItem="klR-U2-bSa" secondAttribute="leading" id="lt0-PY-fcf"/>
+                    <constraint firstAttribute="trailing" secondItem="gQB-vM-9Dy" secondAttribute="trailing" id="ruw-nk-GgQ"/>
+                    <constraint firstAttribute="trailing" secondItem="NVw-w3-EPL" secondAttribute="trailing" constant="15" id="tpI-nJ-e2u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectedBtn" destination="r1j-UN-Cno" id="CUh-zB-eTF"/>
+                <outlet property="selfGetAddress" destination="NVw-w3-EPL" id="oHQ-Cl-0Cz"/>
+            </connections>
+            <point key="canvasLocation" x="73.5" y="167"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="未到账" width="20" height="20"/>
+    </resources>
+</document>

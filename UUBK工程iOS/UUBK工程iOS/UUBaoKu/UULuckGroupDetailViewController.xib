@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UULuckGroupDetailViewController">
+            <connections>
+                <outlet property="tableView" destination="vBk-S3-3HK" id="KIN-jV-mFn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vBk-S3-3HK">
+                    <rect key="frame" x="0.0" y="1" width="375" height="606"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alr-yA-xOr">
+                    <rect key="frame" x="0.0" y="627" width="187.5" height="40"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.2901960784" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2eg-Ff-MwS"/>
+                    </constraints>
+                    <state key="normal" title="我要开团">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toCreateTeam:" destination="-1" eventType="touchUpInside" id="aNs-Xg-ZZn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDe-iX-GBn">
+                    <rect key="frame" x="187.5" y="627" width="187.5" height="40"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.78823529410000004" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="vbp-xc-QU4"/>
+                    </constraints>
+                    <state key="normal" title="邀请好友">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="inviteFriends:" destination="-1" eventType="touchUpInside" id="xsY-17-m2C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vBk-S3-3HK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5WH-ib-so4"/>
+                <constraint firstAttribute="bottom" secondItem="alr-yA-xOr" secondAttribute="bottom" id="Xue-cb-7Nk"/>
+                <constraint firstItem="alr-yA-xOr" firstAttribute="width" secondItem="DDe-iX-GBn" secondAttribute="width" id="cXK-US-xRd"/>
+                <constraint firstAttribute="bottom" secondItem="DDe-iX-GBn" secondAttribute="bottom" id="ceb-Oh-LbT"/>
+                <constraint firstAttribute="bottom" secondItem="vBk-S3-3HK" secondAttribute="bottom" constant="60" id="gGM-yr-RbD"/>
+                <constraint firstItem="vBk-S3-3HK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="1" id="gue-JS-hIX"/>
+                <constraint firstItem="DDe-iX-GBn" firstAttribute="leading" secondItem="alr-yA-xOr" secondAttribute="trailing" id="lbs-Pq-8Vh"/>
+                <constraint firstAttribute="trailing" secondItem="vBk-S3-3HK" secondAttribute="trailing" id="qCz-Zz-WOc"/>
+                <constraint firstItem="alr-yA-xOr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wTM-EN-sS3"/>
+                <constraint firstAttribute="trailing" secondItem="DDe-iX-GBn" secondAttribute="trailing" id="yhs-ep-RK6"/>
+            </constraints>
+            <point key="canvasLocation" x="69.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="UUGoodsShelfCell">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7v-Kc-Qvo">
+                        <rect key="frame" x="9" y="31" width="7.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="存放货架" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmb-7A-Sc6">
+                        <rect key="frame" x="21.5" y="31.5" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackChevron" translatesAutoresizingMaskIntoConstraints="NO" id="SCE-P0-SZp">
+                        <rect key="frame" x="313.5" y="37" width="4.5" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7.5999999999999996" id="f6T-42-xfG"/>
+                            <constraint firstAttribute="width" constant="4.5" id="fpq-Tv-481"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="存放货架" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKt-ij-M3s">
+                        <rect key="frame" x="247" y="32" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tmb-7A-Sc6" firstAttribute="centerY" secondItem="Y7v-Kc-Qvo" secondAttribute="centerY" id="E2g-7M-3Py"/>
+                    <constraint firstItem="tmb-7A-Sc6" firstAttribute="leading" secondItem="Y7v-Kc-Qvo" secondAttribute="trailing" constant="5" id="Ptu-TR-oUr"/>
+                    <constraint firstItem="Y7v-Kc-Qvo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="U5R-mU-Ohm"/>
+                    <constraint firstItem="WKt-ij-M3s" firstAttribute="centerY" secondItem="tmb-7A-Sc6" secondAttribute="centerY" id="cRs-uF-OSU"/>
+                    <constraint firstItem="SCE-P0-SZp" firstAttribute="centerY" secondItem="tmb-7A-Sc6" secondAttribute="centerY" id="gsb-O2-Tpm"/>
+                    <constraint firstItem="Y7v-Kc-Qvo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kan-zd-c0G"/>
+                    <constraint firstItem="SCE-P0-SZp" firstAttribute="leading" secondItem="WKt-ij-M3s" secondAttribute="trailing" constant="5" id="vuD-i6-MhF"/>
+                    <constraint firstAttribute="trailing" secondItem="SCE-P0-SZp" secondAttribute="trailing" constant="15" id="wae-U9-2MS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descLab" destination="WKt-ij-M3s" id="9mM-RJ-kTS"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="72"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BackChevron" width="9" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,79 @@
+//
+//  UUBaoKuPrefixHeader.pch
+//  UUBaoKu
+//
+//  Created by jack on 2016/10/8.
+//  Copyright © 2016年 loongcrown. All rights reserved.
+//
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "DimensMacros.h"
+#import "APIStringMacros.h"
+#import "UtilsMacros.h"
+#import "UserInfoMacros.h"
+#import "NotificationMacros.h"
+
+#import "NSString+MD5.h"
+#import "UUNavigationController.h"
+#import "UUBaseViewController.h"
+#import "WXApi.h"
+#import "AFNetworking.h"
+#import "NetworkTools.h"
+#import "QZHModel.h"
+#import "UIButton+UUButton.h"
+#import "UIImageView+WebCache.h"
+#import "Masonry.h"
+#import "MBProgressHUD.h"
+#import "MJRefresh.h"
+#import "EMAlertView.h"
+#import "UIView+Ex.h"
+#import "NSDictionary+UUTKeyValue.h"
+#import "NSDictionary+UUTTypeCast.h"
+#import "UIImage+Color.h"
+#import "UIControl+UUBaoKu.h"
+#import "UIColor+ZXLazy.h"
+//环信方面
+#import "HyphenateFullSDK/Hyphenate.framework/Headers/Hyphenate.h"
+#import "EaseUI.h"
+#import "SVProgressHUD.h"
+#import "MBProgressHUD+Add.h"
+
+#define DEL_GROUP_NOTIFICATION @"delGroupNotification"
+#define KNOTIFICATIONNAME_DELETEALLMESSAGE @"RemoveAllMessages"
+#define USER_ID [NSString stringWithFormat:@"%ld",[[NSUserDefaults standardUserDefaults]integerForKey:@"UserID"]]
+//#define USER_ID @"2389"
+//#define USER_ID @"10187"
+#define HolderImage [UIImage imageNamed: @"默认头像"]
+
+//API
+#define TEST_URL @"http://uu.dev.loongcrown.com/index.php?g=UUApi"
+
+#define TITLEFONTNAME @"PingFangSC-Regular"
+#define UURED [UIColor colorWithRed:236/255.0 green:74/255.0 blue:72/255.0 alpha:1]
+#define UserId [NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults]objectForKey:@"UserID"]]
+#define UUGREY [UIColor colorWithRed:110/255.0 green:110/255.0 blue:110/255.0 alpha:1]
+#define UUBLACK [UIColor colorWithRed:16/255.0 green:16/255.0 blue:16/255.0 alpha:1]
+
+#define PLACEHOLDIMAGE [UIImage imageWithColor:[UIColor colorWithRed:204/255.0 green:204/255.0 blue:204/255.0 alpha:1]]
+
+#define SCALE_WIDTH kScreenWidth/375.00
+
+
+
+/***  普通字体 */
+#define kFont(size) [UIFont systemFontOfSize:size]
+#define notWebsite @"http://rap.taobao.org/mockjsdata/11755/" //---- 网上接口
+#define selectShopMuArray [[NSMutableArray alloc] init]
+
+#define MainCorlor ([UIColor colorWithRed:236/255.0 green:74/255.0 blue:72/255.0 alpha:1])
+typedef void (^CompleteBlock)(id data,NSError *error);
+
+
+#define gerendata [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0] stringByAppendingPathComponent:@"test.plist"]
+
+#define BACKGROUNG_COLOR [UIColor colorWithRed:239/255.0 green:239/255.0 blue:241/255.0 alpha:1]
+
+
+#endif

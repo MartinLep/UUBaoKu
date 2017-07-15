@@ -1,0 +1,1 @@
+../../../ZMJImageEditor/ZMJImageEditor/Classes/WBGTextTool.h

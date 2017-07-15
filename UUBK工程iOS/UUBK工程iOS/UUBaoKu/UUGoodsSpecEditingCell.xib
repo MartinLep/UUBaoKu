@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UUGoodsSpecEditingCell">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="58"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4q3-p5-8lq">
+                        <rect key="frame" x="20" y="19" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="5Lk-i6-zpM"/>
+                            <constraint firstAttribute="width" secondItem="4q3-p5-8lq" secondAttribute="height" multiplier="1:1" id="enC-6J-F7X"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="未到账"/>
+                        <state key="selected" image="已到账"/>
+                        <connections>
+                            <action selector="selectedAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="crE-V9-bmy"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="czP-ox-bvb">
+                        <rect key="frame" x="50" y="14" width="125" height="30"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="czP-ox-bvb" secondAttribute="trailing" constant="20" id="7QZ-mC-wzI"/>
+                <constraint firstItem="4q3-p5-8lq" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ghT-Xd-UWy"/>
+                <constraint firstItem="4q3-p5-8lq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="kkR-yb-EwR"/>
+                <constraint firstItem="czP-ox-bvb" firstAttribute="centerY" secondItem="4q3-p5-8lq" secondAttribute="centerY" id="n6N-cC-5hh"/>
+                <constraint firstItem="czP-ox-bvb" firstAttribute="leading" secondItem="4q3-p5-8lq" secondAttribute="trailing" constant="10" id="ndf-Hm-91v"/>
+            </constraints>
+            <size key="customSize" width="195" height="58"/>
+            <connections>
+                <outlet property="descTextFiled" destination="czP-ox-bvb" id="oVW-kp-m99"/>
+                <outlet property="selectedBtn" destination="4q3-p5-8lq" id="rSA-mc-W3p"/>
+            </connections>
+            <point key="canvasLocation" x="114.5" y="50"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="已到账" width="20" height="20"/>
+        <image name="未到账" width="20" height="20"/>
+    </resources>
+</document>

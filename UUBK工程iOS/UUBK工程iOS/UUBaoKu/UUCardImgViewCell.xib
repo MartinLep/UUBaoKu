@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="193" id="KGk-i7-Jjw" customClass="UUCardImgViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="193"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="193"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXB-dD-e4x">
+                        <rect key="frame" x="9" y="14.5" width="8" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="A8c-vK-gGi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.89019607840000003" green="0.2784313725" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="证件照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxx-xP-NCb">
+                        <rect key="frame" x="22" y="14.5" width="61.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61.5" id="9k8-wr-oSa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idCard" translatesAutoresizingMaskIntoConstraints="NO" id="2Qt-un-Ga9">
+                        <rect key="frame" x="98.5" y="14" width="92" height="92"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="92" id="S2N-zG-7FI"/>
+                            <constraint firstAttribute="height" constant="92" id="rda-eL-68u"/>
+                        </constraints>
+                    </imageView>
+                    <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardCon" translatesAutoresizingMaskIntoConstraints="NO" id="jMA-Rl-fq5">
+                        <rect key="frame" x="239" y="14" width="92" height="92"/>
+                        <gestureRecognizers/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注：" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPQ-fY-gZ6">
+                        <rect key="frame" x="68.5" y="121" width="25" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.89019607840000003" green="0.2784313725" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xh-Em-FQz">
+                        <rect key="frame" x="98.5" y="121" width="242.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hxx-xP-NCb" firstAttribute="leading" secondItem="wXB-dD-e4x" secondAttribute="trailing" constant="5" id="0hz-WZ-CxP"/>
+                    <constraint firstAttribute="trailing" secondItem="jMA-Rl-fq5" secondAttribute="trailing" constant="15" id="1bt-lf-W8s"/>
+                    <constraint firstItem="vPQ-fY-gZ6" firstAttribute="top" secondItem="4xh-Em-FQz" secondAttribute="top" id="9Bp-8T-G6P"/>
+                    <constraint firstItem="jMA-Rl-fq5" firstAttribute="top" secondItem="2Qt-un-Ga9" secondAttribute="top" id="DPT-cz-P84"/>
+                    <constraint firstItem="2Qt-un-Ga9" firstAttribute="top" secondItem="hxx-xP-NCb" secondAttribute="top" id="GYU-L7-OIz"/>
+                    <constraint firstItem="4xh-Em-FQz" firstAttribute="top" secondItem="2Qt-un-Ga9" secondAttribute="bottom" constant="15" id="Hwy-ff-gVx"/>
+                    <constraint firstItem="jMA-Rl-fq5" firstAttribute="height" secondItem="2Qt-un-Ga9" secondAttribute="height" id="Moe-kF-0JM"/>
+                    <constraint firstItem="wXB-dD-e4x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="Naj-ib-X8g"/>
+                    <constraint firstItem="4xh-Em-FQz" firstAttribute="leading" secondItem="vPQ-fY-gZ6" secondAttribute="trailing" constant="5" id="Wdy-ZV-MH0"/>
+                    <constraint firstItem="hxx-xP-NCb" firstAttribute="top" secondItem="wXB-dD-e4x" secondAttribute="top" id="Wui-5b-czK"/>
+                    <constraint firstAttribute="trailing" secondItem="4xh-Em-FQz" secondAttribute="trailing" constant="5" id="YBc-bW-lSt"/>
+                    <constraint firstItem="jMA-Rl-fq5" firstAttribute="width" secondItem="2Qt-un-Ga9" secondAttribute="width" id="e4O-pB-6bE"/>
+                    <constraint firstItem="wXB-dD-e4x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14.5" id="e8O-Rl-A0c"/>
+                    <constraint firstItem="2Qt-un-Ga9" firstAttribute="leading" secondItem="hxx-xP-NCb" secondAttribute="trailing" constant="15" id="gBx-4w-2hH"/>
+                    <constraint firstItem="4xh-Em-FQz" firstAttribute="leading" secondItem="2Qt-un-Ga9" secondAttribute="leading" id="wt6-DD-jlV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardCon" destination="jMA-Rl-fq5" id="kp0-wo-C8d"/>
+                <outlet property="cardFace" destination="2Qt-un-Ga9" id="tTl-gb-Ti0"/>
+                <outlet property="descLab" destination="4xh-Em-FQz" id="ced-HZ-Ke6"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="128.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cardCon" width="93" height="93"/>
+        <image name="idCard" width="93" height="93"/>
+    </resources>
+</document>

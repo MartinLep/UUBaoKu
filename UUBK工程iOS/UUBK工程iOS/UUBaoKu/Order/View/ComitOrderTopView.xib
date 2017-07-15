@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ComitOrderTopView">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDf-p3-tHr">
+                    <rect key="frame" x="0.0" y="0.0" width="186" height="62"/>
+                    <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="我的收货地址" image="getAddress_selected">
+                        <color key="titleColor" red="0.94901960784313721" green="0.20288128129999999" blue="0.2054858145" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="choiceDeliveryMode:" destination="iN0-l3-epB" eventType="touchUpInside" id="nLY-yk-iR5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tui-oS-cq2">
+                    <rect key="frame" x="186" y="0.0" width="186" height="62"/>
+                    <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="派单地址" image="sendAddress_normal">
+                        <color key="titleColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="choiceDeliveryMode:" destination="iN0-l3-epB" eventType="touchUpInside" id="UEm-Jf-AYe"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hdi-Up-1WW">
+                    <rect key="frame" x="0.0" y="62" width="372" height="0.0"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="0ce-iG-m42"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tui-oS-cq2" firstAttribute="width" secondItem="XDf-p3-tHr" secondAttribute="width" id="7Ri-Tj-YIv"/>
+                <constraint firstItem="Tui-oS-cq2" firstAttribute="leading" secondItem="XDf-p3-tHr" secondAttribute="trailing" id="8NF-UF-vo3"/>
+                <constraint firstItem="XDf-p3-tHr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QAu-Vc-C8E"/>
+                <constraint firstItem="XDf-p3-tHr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rm0-aF-yqV"/>
+                <constraint firstAttribute="bottom" secondItem="Hdi-Up-1WW" secondAttribute="bottom" id="RuP-rf-2cW"/>
+                <constraint firstAttribute="bottom" secondItem="Tui-oS-cq2" secondAttribute="bottom" id="WQ1-gF-hrI"/>
+                <constraint firstItem="Tui-oS-cq2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WRZ-BZ-dcf"/>
+                <constraint firstAttribute="trailing" secondItem="Tui-oS-cq2" secondAttribute="trailing" id="afx-MS-WVt"/>
+                <constraint firstAttribute="bottom" secondItem="XDf-p3-tHr" secondAttribute="bottom" id="gi4-iG-zOa"/>
+                <constraint firstItem="Hdi-Up-1WW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sId-Zd-6uz"/>
+                <constraint firstAttribute="trailing" secondItem="Hdi-Up-1WW" secondAttribute="trailing" id="zLt-di-tcv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="getAddressBtn" destination="XDf-p3-tHr" id="9bw-P3-vaK"/>
+                <outlet property="sendAddressBtn" destination="Tui-oS-cq2" id="m5a-r8-kLs"/>
+            </connections>
+            <point key="canvasLocation" x="21" y="-147"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="getAddress_selected" width="12" height="17"/>
+        <image name="sendAddress_normal" width="16" height="17"/>
+    </resources>
+</document>

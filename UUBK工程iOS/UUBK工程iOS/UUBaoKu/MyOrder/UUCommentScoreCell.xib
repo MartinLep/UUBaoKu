@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UUCommentScoreCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评分：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LO-6g-1uH">
+                        <rect key="frame" x="25" y="13" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zoz-kZ-dX9">
+                        <rect key="frame" x="81" y="12.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="EYt-gN-Dnb"/>
+                            <constraint firstAttribute="height" constant="20" id="NJK-HK-4A5"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="发现默认图"/>
+                        <state key="selected" image="发现选中图"/>
+                        <connections>
+                            <action selector="selectedScore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9P8-22-u3Z"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lba-jM-E6N">
+                        <rect key="frame" x="111" y="13" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0pm-Ss-5uM"/>
+                            <constraint firstAttribute="width" constant="20" id="t4Q-8u-KgD"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="发现默认图"/>
+                        <state key="selected" image="发现选中图"/>
+                        <connections>
+                            <action selector="selectedScore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Nfc-gM-Kwd"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOc-xk-1DZ">
+                        <rect key="frame" x="141" y="13" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1cF-bS-pto"/>
+                            <constraint firstAttribute="width" constant="20" id="ZMz-Ro-Zmw"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="发现默认图"/>
+                        <state key="selected" image="发现选中图"/>
+                        <connections>
+                            <action selector="selectedScore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Vxi-JC-U7V"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUl-Ao-lob">
+                        <rect key="frame" x="201" y="13" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="POU-CM-3mR"/>
+                            <constraint firstAttribute="height" constant="20" id="Spu-lV-VGV"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="发现默认图"/>
+                        <state key="selected" image="发现选中图"/>
+                        <connections>
+                            <action selector="selectedScore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hmC-Fk-Msr"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cc7-pH-EaX">
+                        <rect key="frame" x="171" y="13" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="2fr-vz-b08"/>
+                            <constraint firstAttribute="width" constant="20" id="81B-BG-cUo"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="发现默认图"/>
+                        <state key="selected" image="发现选中图"/>
+                        <connections>
+                            <action selector="selectedScore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="h2M-vm-Fba"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zOc-xk-1DZ" firstAttribute="centerY" secondItem="lba-jM-E6N" secondAttribute="centerY" id="5HU-pQ-lEu"/>
+                    <constraint firstItem="zOc-xk-1DZ" firstAttribute="leading" secondItem="lba-jM-E6N" secondAttribute="trailing" constant="10" id="B2E-Pi-yjV"/>
+                    <constraint firstItem="Zoz-kZ-dX9" firstAttribute="leading" secondItem="1LO-6g-1uH" secondAttribute="trailing" constant="10" id="H8Y-Qx-dwi"/>
+                    <constraint firstItem="lba-jM-E6N" firstAttribute="centerY" secondItem="Zoz-kZ-dX9" secondAttribute="centerY" id="Q6y-nc-ezZ"/>
+                    <constraint firstItem="cc7-pH-EaX" firstAttribute="leading" secondItem="zOc-xk-1DZ" secondAttribute="trailing" constant="10" id="QV9-GC-Ney"/>
+                    <constraint firstItem="1LO-6g-1uH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="RWC-Ev-zUj"/>
+                    <constraint firstItem="CUl-Ao-lob" firstAttribute="leading" secondItem="cc7-pH-EaX" secondAttribute="trailing" constant="10" id="hpc-3a-5T4"/>
+                    <constraint firstItem="CUl-Ao-lob" firstAttribute="centerY" secondItem="cc7-pH-EaX" secondAttribute="centerY" id="is6-v1-0Cx"/>
+                    <constraint firstItem="lba-jM-E6N" firstAttribute="leading" secondItem="Zoz-kZ-dX9" secondAttribute="trailing" constant="10" id="qeN-ho-AAF"/>
+                    <constraint firstItem="cc7-pH-EaX" firstAttribute="centerY" secondItem="zOc-xk-1DZ" secondAttribute="centerY" id="ydz-Ha-Fnv"/>
+                    <constraint firstItem="Zoz-kZ-dX9" firstAttribute="centerY" secondItem="1LO-6g-1uH" secondAttribute="centerY" id="z5U-1b-yTH"/>
+                    <constraint firstItem="1LO-6g-1uH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zgW-JC-YIB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fifthScore" destination="CUl-Ao-lob" id="yau-sj-J0E"/>
+                <outlet property="firstScore" destination="Zoz-kZ-dX9" id="6dq-LV-hq8"/>
+                <outlet property="forthScore" destination="cc7-pH-EaX" id="eeU-hZ-DpB"/>
+                <outlet property="secondScore" destination="lba-jM-E6N" id="I5I-Kq-bso"/>
+                <outlet property="thirdScore" destination="zOc-xk-1DZ" id="Y5g-Qj-mmQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="发现选中图" width="22" height="22"/>
+        <image name="发现默认图" width="23" height="23"/>
+    </resources>
+</document>

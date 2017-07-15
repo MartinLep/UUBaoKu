@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UUImageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="113" height="99"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hZY-Ki-FSn">
+                        <rect key="frame" x="0.0" y="0.0" width="113" height="99"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPa-5q-wz8">
+                        <rect key="frame" x="93" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="90l-og-osB"/>
+                            <constraint firstAttribute="width" constant="20" id="w3z-V9-bRB"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="close"/>
+                        <connections>
+                            <action selector="delSelectedImage:" destination="gTV-IL-0wX" eventType="touchUpInside" id="YLb-Hq-EFF"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hZY-Ki-FSn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4XE-Or-ToU"/>
+                <constraint firstItem="hZY-Ki-FSn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Su8-Pa-pQD"/>
+                <constraint firstAttribute="bottom" secondItem="hZY-Ki-FSn" secondAttribute="bottom" id="mx5-Jw-8nB"/>
+                <constraint firstAttribute="trailing" secondItem="hZY-Ki-FSn" secondAttribute="trailing" id="v5f-Ty-Mza"/>
+                <constraint firstItem="hPa-5q-wz8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="y01-vJ-y3C"/>
+                <constraint firstAttribute="trailing" secondItem="hPa-5q-wz8" secondAttribute="trailing" id="znS-b0-iO1"/>
+            </constraints>
+            <size key="customSize" width="113" height="99"/>
+            <connections>
+                <outlet property="delImageBtn" destination="hPa-5q-wz8" id="FmK-ZH-SUX"/>
+                <outlet property="picImageView" destination="hZY-Ki-FSn" id="KxH-Oe-uSz"/>
+            </connections>
+            <point key="canvasLocation" x="65.5" y="29.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="close" width="20" height="20"/>
+    </resources>
+</document>

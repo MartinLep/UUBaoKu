@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UUBoughtGoodsViewController">
+            <connections>
+                <outlet property="tableView" destination="7ic-3f-UoK" id="WCP-dN-yev"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7ic-3f-UoK">
+                    <rect key="frame" x="0.0" y="1" width="375" height="666"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="7ic-3f-UoK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JbU-Td-HSO"/>
+                <constraint firstItem="7ic-3f-UoK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="1" id="Jqb-Kc-iY8"/>
+                <constraint firstAttribute="trailing" secondItem="7ic-3f-UoK" secondAttribute="trailing" id="TI9-SZ-T34"/>
+                <constraint firstAttribute="bottom" secondItem="7ic-3f-UoK" secondAttribute="bottom" id="tfO-03-fda"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
